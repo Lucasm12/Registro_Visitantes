@@ -6,7 +6,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .container, .login-container {
@@ -14,10 +14,15 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
 }
 
 h1, h2 {
     margin-top: 0;
+    font-size: 24px;
+    text-align: center;
 }
 
 form {
@@ -31,6 +36,8 @@ input, select, textarea, button {
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 button {
@@ -38,6 +45,7 @@ button {
     color: white;
     border: none;
     cursor: pointer;
+    font-size: 18px;
 }
 
 button:hover {
@@ -53,11 +61,12 @@ table {
 th, td {
     border: 1px solid #ddd;
     padding: 8px;
+    text-align: left;
+    font-size: 14px;
 }
 
 th {
     background-color: #f2f2f2;
-    text-align: left;
 }
 
 tbody tr:nth-child(even) {
@@ -66,4 +75,24 @@ tbody tr:nth-child(even) {
 
 tbody tr:hover {
     background-color: #f1f1f1;
+}
+
+/* Estilos adicionais para telas pequenas */
+@media (max-width: 600px) {
+    h1, h2 {
+        font-size: 20px;
+    }
+
+    input, select, textarea, button {
+        font-size: 14px;
+    }
+
+    th, td {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    button {
+        font-size: 16px;
+    }
 }
