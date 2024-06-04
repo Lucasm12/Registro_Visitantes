@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Administração de Visitantes</h1>
+        <h2>Pesquisar Visitantes por Data</h2>
+        <form id="searchForm">
+            <input type="date" id="searchDate" required>
+            <button type="submit">Pesquisar</button>
+        </form>
+        <h2>Visitantes Cadastrados</h2>
+        <table id="adminVisitorTable">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Evangélica</th>
+                    <th>Igreja</th>
+                    <th>Observações</th>
+                    <th>Data da Visita</th>
+                </tr>
+            </thead>
+            <tbody id="adminVisitorList">
+                <!-- Visitantes serão listados aqui -->
+            </tbody>
+        </table>
+      <center><button id="logout">Sair</button></center>  
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
